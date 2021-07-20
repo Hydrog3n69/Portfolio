@@ -24,10 +24,10 @@ export default function Navbar() {
         <nav>
             {(toggleMenu || largeur > 800) && (
                 <ul className="liste">
-                <Link to="/" ><li className="items"><a>Home</a></li></Link>
-                <Link to="/Portfolio" ><li className="items"><a>Portfolio</a></li></Link>
-                <Link to="/About" ><li className="items"><a>About</a></li></Link>
-                <Link to="/Contact" ><li className="items"><a>Contact</a></li></Link>
+                <Link to="/" ><li className="items"><a href='home'>Home</a></li></Link>
+                <Link to="/Portfolio" ><li className="items"><a href='Portfolio'>Portfolio</a></li></Link>
+                <Link to="/About" ><li className="items"><a href='About'>About</a></li></Link>
+                <Link to="/Contact" ><li className="items"><a href='contact'>Contact</a></li></Link>
             </ul>
             )}
             <button onClick={toggleSmallScreen} className="pulse-anime">Menu</button>
