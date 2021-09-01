@@ -1,114 +1,117 @@
-nav{
-    height:90px;
-    font-family: 'KoHo', sans-serif;
-    background: linear-gradient(45deg, rgb(16, 101, 116),midnightblue);
-    z-index: 1000;
+nav {
+  font-family: "KoHo", sans-serif;
+  color: rgb(44, 44, 44);
+  z-index: 1000;
 }
-
-.liste{
-    list-style-type: none;
-    background-color: transparent;
+* {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+}
+.liste {
+  list-style-type: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  font-size: 1.6rem;
+  z-index: 1000;
+}
+.liste ul li a {
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+}
+.items {
+  margin-right: 10px;
+  color: rgb(44, 44, 44);
+  cursor: pointer;
+  margin-top: 30px;
+  z-index: 1000;
+}
+.pulse-anime {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .liste {
+    flex-direction: column;
+    height: 30vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    font-size: 1.4rem;
-     z-index: 1000;
-}
-.items{
-    margin-right: 10px;
-    color: #fff;
+  }
+  .items:nth-child(1) {
+    border-top: 1 solid #fff;
+  }
+  .items {
+    height: 40px;
+    border-bottom: 1 solid #fff;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+  .pulse-anime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    position: absolute;
+    background-color: #484f50;
+    border: none;
+    width: 80px;
+    height: 50px;
+    right: 10px;
+    top: 10px;
+    color: rgb(44, 44, 44);
     cursor: pointer;
-    margin-top: 30px;
-     z-index: 1000;
-}
-.pulse-anime{
-    display: none;
-}
-@media screen and (max-width: 800px){
-    .liste{
-        flex-direction: column;
-        height: 30vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .items:nth-child(1){
-        border-top: 1 solid #fff;
-        
-    }
-    .items{
-        height: 40px;
-        border-bottom: 1 solid #fff;
-        line-height: 40px;
-        margin-top: 10px;
-    }
-    .pulse-anime{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius:15%;
-        position: absolute;
-        background-color: #484f50;
-        border: none;
-        width: 80px;
-        height: 50px;
-        right: 10px;
-        top: 10px;
-        color: #ebebeb;
-        cursor: pointer;
-        font-family: 'KoHo', sans-serif;
-        text-align: center;
-    }
-}
-ul li a{
-    position: relative;
-    display:block;
+    font-family: "KoHo", sans-serif;
     text-align: center;
-    margin: 0 50px;
-    padding: 1px 15px;
-    
+  }
 }
-ul li a:before{
-    content:'';
-    position: absolute;
-    bottom: 2px;
-    left: 10px;
-    width: 8px;
-    height:8px;
-    border:3px solid rgb(201, 201, 201);
-    border-width: 0 0 3px 3px;
-    transition: .6s;
-    opacity:0;
-    color: black;
+ul li a {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0 50px;
+  padding: 1px 15px;
 }
-ul li a:hover:before{
-    bottom: -8px;
-    left: -8px;
-    opacity: 1;
-    
+ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  border: 3px solid rgb(131, 131, 131);
+  border-width: 0 0 3px 3px;
+  transition: 0.6s;
+  opacity: 0;
+  color: black;
 }
-ul li a:after{
-    content:'';
-    position: absolute;
-    top: 5px;
-    right: 6px;
-    width: 8px;
-    height:8px;
-    border:3px solid rgb(201, 201, 201);
-    border-width: 3px 3px 0 0 ;
-    transition: .6s;
-    opacity:0;
-    color: black;
-} 
-ul li a:hover:after{
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    opacity: 1;
+ul li a:hover:before {
+  bottom: -8px;
+  left: -8px;
+  opacity: 1;
+}
+ul li a:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border: 3px solid rgb(131, 131, 131);
+  border-width: 3px 3px 0 0;
+  transition: 0.6s;
+  opacity: 0;
+  color: black;
+}
+ul li a:hover:after {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  opacity: 1;
 }
 
-.pulse-anime{
+.pulse-anime {
   position: absolute;
   left: 20px;
   top: 20px;
@@ -116,16 +119,16 @@ ul li a:hover:after{
   height: 50px;
   border-radius: 50%;
   background-color: transparent;
-  color:white;
-  border:none;
-  animation:pulse 1.2s infinite;
+  color: rgb(44, 44, 44);
+  border: none;
+  animation: pulse 1.2s infinite;
 }
 
-@keyframes pulse{
-  from{
-      box-shadow: 0 0 0 0 rgb(201, 201, 201);
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 rgb(201, 201, 201);
   }
-  to{
-      box-shadow: 0 0 0 15px rgba(201, 201, 201, 0.005);
+  to {
+    box-shadow: 0 0 0 15px rgba(201, 201, 201, 0.005);
   }
 }

@@ -1,102 +1,157 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+::-webkit-scrollbar {
+  display: none;
 }
-.portfolio-page{
-    height: 93.1vh;
-    background-color: grey;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.portfolio-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+.home-page {
+  display: flex;
+  flex-direction: column;
 }
-.about-page{
-    height: 93.1vh;
-    background-color: grey
+.home-container {
+  display: flex;
+  padding: 60px 0 600px 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
 }
-.about-button{
-    margin-top: -10px;
-    z-index: 1000;
-    cursor: pointer;
+.H {
+  font-size: 9rem;
+  color: rgb(39, 121, 153);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.about-container{
-    padding: 3vh;
-    display: flex;
-    height: auto;
-    margin-top: 3vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 17px 1px rgb(51, 51, 51);
-    border-radius: 15px;
-    color: rgb(7, 7, 7);
-    background-color:rgb(223, 223, 223)
+.home-text-big p {
+  font-size: 5rem;
+  color: rgb(211, 211, 211);
+  font-family: "Roboto Slab", serif;
+  margin-left: -50px;
 }
-.slide{
-    background-color: rgb(76, 121, 151);
-    margin: 15px 15px 0 15px;
-    width: 350px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.home-text {
+  color: rgb(212, 212, 212);
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
 }
-.me-picture{
-    margin-top: 25px ;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border:solid 3px rgb(223, 223, 223);
+.me-container {
+  position: absolute;
+  margin-top: 420px;
+  right: 14vw;
+  top: 80px;
+  z-index: 1000;
 }
-.me-description{
-    background-color: rgb(76, 121, 151);
-    padding: 3rem 0;
-    margin-bottom: 15px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-family: 'KoHo', sans-serif;
-    font-weight: 600;
-    
+.me {
+  height: 450px;
+  width: 280px;
+  filter: grayscale(1);
+  transition-duration: 1500ms;
+  border: 3px solid rgb(39, 121, 153);
+  border-width: 0 0 5px 5px;
+  box-sizing: content-box;
 }
-.me-description p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 15px;
+.me:hover {
+  filter: grayscale(0);
+  transition-duration: 1500ms;
 }
-.line{
-    width: 200px;
-    height: 1px;
-    margin: 1rem;
-    color: grey
+.fond {
+  width: 100%;
+  filter: grayscale(60%);
+  filter: blur(1px);
+  z-index: 1;
 }
-.home-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 93.1vh;
-    background-color: grey;
+.projets-title {
+  display: flex;
+  z-index: 1000;
+  justify-content: center;
+  margin-top: -10px;
+  height: 150px;
+  font-size: 1.5rem;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  background-color: rgba(124, 135, 136, 0.616);
 }
-
-.contact-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 93.1vh;
-    background-color: grey;
+.projets-container {
+  margin: 90px 50px;
+}
+.web-site-container {
+  max-width: 330px;
+  height: 660px;
+  font-size: 1.2rem;
+  background-color: rgb(39, 121, 153);
+}
+.web-site-container p {
+  padding: 10px;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(216, 216, 216);
+  font-family: Comfortaa;
+  font-size: 1.2rem;
+}
+.about-title {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  font-size: 1.5rem;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  background-color: rgb(39, 121, 153);
+}
+.about-text {
+  margin: 90px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  font-size: 1.2rem;
+  font-family: "Roboto Slab", serif;
+  color: rgb(117, 117, 117);
+}
+.about-text h2 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  color: black;
+  margin-left: -15px;
+}
+.about-page {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.C {
+  font-size: 4.8rem;
+  color: rgb(39, 121, 153);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.contact-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.8rem;
+  color: rgb(185, 185, 185);
+  padding-bottom: 3rem;
+}
+.contact-page {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+.contact-link ul li {
+  font-family: Comfortaa;
+  font-size: 2rem;
+  padding: 1.6rem;
+  width: max-content;
+  color: rgb(185, 185, 185);
+  transition-duration: 800ms;
+}
+.contact-link ul li:hover {
+  color: rgb(39, 121, 153);
+  transition-duration: 800ms;
 }
