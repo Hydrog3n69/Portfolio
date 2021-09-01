@@ -34,10 +34,12 @@ function Home() {
         <div className="projets-container">
           <div className="web-site-container">
             <a href="https://repar-auto-mobile.com/">
-              <p>Réparauto-mobile</p>
-              <img src={work1} alt="website" width="300px" />
-              <img src={work2} alt="website" width="300px" />
-              <img src={work3} alt="website" width="300px" />
+              <div className="picture-bloc">
+                <p>Réparauto-mobile</p>
+                <img src={work1} alt="website" width="300px" />
+                <img src={work2} alt="website" width="300px" />
+                <img src={work3} alt="website" width="300px" />
+              </div>
             </a>
           </div>
         </div>

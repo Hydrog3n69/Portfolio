@@ -81,18 +81,22 @@
   margin: 90px 50px;
 }
 .web-site-container {
-  max-width: 330px;
-  height: 660px;
+  max-width: 310px;
+  height: 650px;
   font-size: 1.2rem;
   background-color: rgb(39, 121, 153);
+  margin-bottom: 200px;
 }
 .web-site-container p {
-  padding: 10px;
+  padding: 5px 18px;
   text-decoration: none;
   list-style: none;
   color: rgb(216, 216, 216);
   font-family: Comfortaa;
   font-size: 1.2rem;
+}
+.picture-bloc {
+  margin-left: -10px;
 }
 .about-title {
   display: flex;
