@@ -67,7 +67,7 @@ function Home() {
           </p>
           <br />
           <h2>Langages / Framework / CMS</h2>
-          <p>JavaScript, React, Next, Node.js, MySql, Express, Strapi</p>
+          <p>JavaScript, React, Next, Node.js, MySql, Strapi</p>
           <br />
           <h2>Librairies</h2>
           <p>Tailwind, Material UI </p>
